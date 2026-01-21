@@ -56,3 +56,10 @@ Veri noktalarının birbirine olan uzaklığına (Eucledian distance) dayanarak 
 
 ## Sonuç
 Bu projede, ev içindeki cihazları izlemeden sadece dış hava durumu ve zaman verileriyle yüksek doğrulukta enerji tahmini yapılabileceğini kanıtlamıştır. Pivot tablolarla oluşturduğumuz referans noktaları ve döngüsel saat özellikleri, modellerin hane alışkanlıklarını çok daha iyi kavramasını sağlayarak başarı oranını %82 seviyesine taşımıştır.
+
+## Sertifikalar
+
+![pythonProgramlamaSertifika](images/pythonProgramlamaSertifika.pdf)
+![MakineOgrenmesiSertifika](images/MakineOgrenmesiSertifika.pdf)
+
+
