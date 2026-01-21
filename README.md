@@ -59,7 +59,7 @@ Bu projede, ev içindeki cihazları izlemeden sadece dış hava durumu ve zaman 
 
 ## Sertifikalar
 
-![pythonProgramlamaSertifika](images/pythonProgramlamaSertifika.pdf)
-![MakineOgrenmesiSertifika](images/MakineOgrenmesiSertifika.pdf)
+![pythonProgramlamaSertifika](images/pythonProgramlamaSertifika.png)
+![MakineOgrenmesiSertifika](images/MakineOgrenmesiSertifika.png)
 
 
