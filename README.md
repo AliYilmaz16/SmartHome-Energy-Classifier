@@ -12,17 +12,22 @@ Projede kullanılan veri seti, bir akıllı evin enerji tüketim alışkanlıkla
 ### Uygulanan Ön İşleme Adımları
 #### Zaman Dönüşümü
 Ham veride "Unix Timestamp" formatında bulunan zaman bilgisi, mevsimsel ve döngüsel analizlere (saatlik/günlük trendler) imkan tanıyan datetime formatına dönüştürülmüştür.
+![ZamanDonusumu](images/zamanDonusumu.png)
 
 #### Eksik Veri Tamamlama Meteorolojik verilerdeki (örneğin cloudCover) boş veya hatalı değerler, hava durumunun zamansal sürekliliği ve fiziksel tutarlılığı göz önüne alınarak "Forward Fill" yöntemiyle (bir önceki saatin verisiyle) tamamlanmıştır.
+![EksikVeri](images/eksikVeri.png)
 
 #### Encoding
 summary (Hava durumu özeti) gibi metinsel ifadeler içeren kategorik sütunlar, modellerin matematiksel olarak işleyebilmesi için LabelEncoder yöntemiyle sayısal değerlere dönüştürülmüştür.
+![EncodingIslemi](images/encodingIslemi.png)
 
-#### Scaling (Ölçeklendirme)
+#### Scaling
 Sıcaklık (20°C) ve basınç (1013 mbar) gibi farklı birim ve ölçeklerdeki verilerin modelleri (özellikle KNN ve Logistic Regression) yanıltmaması için StandardScaler kullanılarak veriler standart normal dağılıma çekilmiştir.
+![scalingIslemi](images/scalingIslemi.png)
 
 ## Kullanılan Modeller ve Performans Analizi
 Proje kapsamında, problemin doğasına en uygun algoritmayı belirlemek amacıyla üç farklı makine öğrenmesi yaklaşımı karşılaştırılmıştır:
+![modeller](images/modeller.png)
 
 ### Random Forest
 Veri setindeki karmaşık ve lineer olmayan ilişkileri yakalayabilen, aşırı öğrenmeye (overfitting) karşı dirençli bir topluluk (ensemble) öğrenme modelidir.
@@ -32,3 +37,5 @@ Sınıflar arasındaki olasılıksal ilişkiyi modelleyen temel ve güçlü bir 
 
 ### K-Nearest Neighbors (KNN) 
 Veri noktalarının birbirine olan uzaklığına (Eucledian distance) dayanarak sınıflandırma yapan mesafe tabanlı bir algoritmadır.
+
+![modellerCikti](images/modelCikti.png)
