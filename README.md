@@ -38,4 +38,21 @@ Sınıflar arasındaki olasılıksal ilişkiyi modelleyen temel ve güçlü bir 
 ### K-Nearest Neighbors (KNN) 
 Veri noktalarının birbirine olan uzaklığına (Eucledian distance) dayanarak sınıflandırma yapan mesafe tabanlı bir algoritmadır.
 
-![modellerCikti](images/modelCikti.png)
+| Model | Doğruluk Oranı |
+|-------|----------------|
+| KNN Classification | %81.38 |
+| Random Forest | %75.87 |
+| Logistic Regression | %59.61 |
+
+## Model Analizi ve Görsel Çıktılar
+### 1. Model Karşılaştırma Grafiği
+![modelKarsilastirma](images/modelKarsilastirma.png)
+
+### 2. Feature Importance
+![featureImporance](images/featureImporance.png)
+
+### 3. Confusion Matrix
+![confusionMatrix](images/confusionMatrix.png)
+
+## Sonuç
+Bu projede, ev içindeki cihazları izlemeden sadece dış hava durumu ve zaman verileriyle yüksek doğrulukta enerji tahmini yapılabileceğini kanıtlamıştır. Pivot tablolarla oluşturduğumuz referans noktaları ve döngüsel saat özellikleri, modellerin hane alışkanlıklarını çok daha iyi kavramasını sağlayarak başarı oranını %82 seviyesine taşımıştır.
